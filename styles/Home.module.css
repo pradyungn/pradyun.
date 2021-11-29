@@ -54,12 +54,12 @@
     .bubbles > div > a {
         font-weight: bold;
         color: inherit;
-        font-size: 22px;
+        font-size: 28px;
     }
 }
 
 .shpiel {
-    font-size: 36px;
+    font-size: 40px;
 }
 
 .bubbles {
@@ -81,13 +81,13 @@
 
     transition: 250ms ease;
 
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .bubbles > div:hover {
     background: transparent;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .gh {

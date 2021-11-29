@@ -9,7 +9,8 @@
 .links {
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 22px;
+    margin-top: 2px;
 }
 
 .links > div {
@@ -39,6 +40,7 @@
     background: var(--fg);
     transform: translate(100%);
     transition: 200ms ease;
+    margin-top: -3px;
 }
 
 .toggle {
