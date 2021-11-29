@@ -16,17 +16,17 @@ export default function Home() {
             </div>
             <div className={styles.bubbles}>
                 <div className={styles.gh}>
-                    <a href="https://github.com/pradyungn">gh</a>
+                    <a target="_blank" href="https://github.com/pradyungn">gh</a>
                 </div>
                 <div className={styles.li}>
-                    <a href="https://linkedin.com/in/pradyun">li</a>
+                    <a target="_blank" href="https://linkedin.com/in/pradyun">li</a>
                 </div>
                 <div className={styles.fa}>
-                    <a href="https://www.facebook.com/profile.php?id=100009257228843">
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100009257228843">
                         fb</a>
                 </div>
-                <div className={styles.tw}>
-                    <a href="https://twitter.com/pradyungn">tw</a>
+                <div className={styles.em}>
+                    <a target="_blank" href="mailto:pradyun2@illinois.edu">em</a>
                 </div>
             </div>
         </div>

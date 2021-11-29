@@ -1,6 +1,6 @@
 .main {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     position: absolute;
@@ -36,7 +36,7 @@
         background: var(--green);
     }
 
-    .tw {
+    .em {
         background: var(--yellow);
     }
 
@@ -54,7 +54,7 @@
     .bubbles > div > a {
         font-weight: bold;
         color: inherit;
-        font-size: 18px;
+        font-size: 22px;
     }
 }
 
@@ -102,7 +102,7 @@
     color: var(--green);
 }
 
-.tw {
+.em {
     color: var(--yellow);
 }
 
