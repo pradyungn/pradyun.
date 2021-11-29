@@ -23,7 +23,7 @@ export default function Home() {
                 </div>
                 <div className={styles.fa}>
                     <a href="https://www.facebook.com/profile.php?id=100009257228843">
-                        fa</a>
+                        fb</a>
                 </div>
                 <div className={styles.tw}>
                     <a href="https://twitter.com/pradyungn">tw</a>

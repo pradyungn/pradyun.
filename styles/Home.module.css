@@ -1,10 +1,9 @@
 .main {
     display: flex;
+    align-items: start;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     position: absolute;
-
 
     height: calc(100% - 40px);
     width: 100%;
@@ -18,6 +17,45 @@
 
 .header {
     font-size: 64px;
+}
+
+@media(min-width: 620px) {
+    .main{
+        align-items: center;
+    }
+
+    .gh {
+        background: var(--red);
+    }
+
+    .li {
+        background: var(--blue);
+    }
+
+    .fa {
+        background: var(--green);
+    }
+
+    .tw {
+        background: var(--yellow);
+    }
+
+    .bubbles > div > a {
+        color: transparent;
+    }
+}
+
+@media(max-width: 620px) {
+    .main{
+        padding-left: 20px;
+        width: calc(100% - 20px);
+    }
+
+    .bubbles > div > a {
+        font-weight: bold;
+        color: inherit;
+        font-size: 18px;
+    }
 }
 
 .shpiel {
@@ -53,28 +91,19 @@
 }
 
 .gh {
-    background: var(--red);
     color: var(--red);
 }
 
 .li {
-    background: var(--blue);
     color: var(--blue);
 }
 
 .fa {
-    background: var(--green);
     color: var(--green);
 }
 
 .tw {
-    background: var(--yellow);
     color: var(--yellow);
-}
-
-
-.bubbles > div > a {
-    color: transparent;
 }
 
 .bubbles > div:hover > a {
