@@ -1,16 +1,46 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+
+.dark {
+    --red: #ac8a8c;
+    --blue: #8aacab;
+    --green: #8aac8b;
+    --yellow: #aca98a;
+
+    --bg: #0f0f0f;
+    --fg: #f0f0f0;
+}
+
+.light {
+    --red: #c49ea0;
+    --blue: #9ec49f;
+    --green: #9ec3c4;
+    --yellow: #c4c19e;
+
+    --bg: #f0f0f0;
+    --fg: #0f0f0f;
+}
+
+body,
+html {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    min-height: 100%;
+    margin: 0;
+}
+
+.emph {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.container {
+    background: var(--bg);
+    color: var(--fg);
+
+    transition: 200ms ease;
 }
