@@ -45,4 +45,13 @@
 
 .toggle {
     cursor: pointer;
+    font-size: 28px;
+
+    margin-bottom: -10px;
+
+    transition: 200ms ease;
+}
+
+.toggle:hover {
+    transform: scale(1.1);
 }

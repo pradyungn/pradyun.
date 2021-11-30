@@ -1,3 +1,4 @@
+import {RiLightbulbFlashLine, RiLightbulbFlashFill} from "react-icons/ri"
 import Link from 'next/link'
 import styles from "../styles/NavBar.module.css"
 
@@ -13,7 +14,7 @@ export default function NavBar(props) {
         )
     }
 
-    const buttontext = props.curr=="light" ? "drk" : "lgt"
+    const buttontext = props.curr=="light" ? (<RiLightbulbFlashLine/>) : (<RiLightbulbFlashFill/>)
 
     return (
         <div className={styles.navbar}>
@@ -24,10 +25,9 @@ export default function NavBar(props) {
                 <HRLink name="files"/>
                 <HRLink name="projects"/>
                 <HRLink name="blog"/>
-                <div className={styles.link + " " + styles.toggle}>
+                <div className={styles.toggle}>
                     <div onClick={() => props.hook(props.curr=="light" ? "dark" : "light")}
                         className={styles.link}>{buttontext}</div>
-                    <div className={styles.bar}/>
                 </div> 
             </div>
         </div>
