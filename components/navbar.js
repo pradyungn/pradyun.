@@ -20,6 +20,7 @@ export default function NavBar(props) {
         <div className={styles.navbar}>
             <div className={"emph " + styles.mainlink}
                 ><Link href="/">pradyun.</Link></div>
+
             <div className={styles.links}>
                 <HRLink name="about"/>
                 <HRLink name="files"/>
