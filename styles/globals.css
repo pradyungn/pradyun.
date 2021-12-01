@@ -1,11 +1,12 @@
 @import url("https://use.typekit.net/uqc8pqh.css");
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap');
 
 .dark {
     --red: #ac8a8c;
     --blue: #8aacab;
     --green: #8aac8b;
     --yellow: #aca98a;
+    --purple: #8f8aac;
 
     --bg: #0f0f0f;
     --fg: #f0f0f0;
@@ -13,14 +14,16 @@
 
 .light {
     --red: #c49ea0;
-    --blue: #9ec49f;
-    --green: #9ec3c4;
+    --green: #9ec49f;
+    --blue: #9ec3c4;
     --yellow: #c4c19e;
+    --purple: #a39ec4;
 
     --bg: #f0f0f0;
     --fg: #0f0f0f;
 }
 
+/* general formatting */
 body,
 html {
     font-family: "adobe-garamond-pro", serif;
@@ -29,18 +32,54 @@ html {
     margin: 0;
 }
 
-.emph {
-    font-family: "Outfit", sans-serif;
-    font-weight: 600;
-}
-
-a {
-    text-decoration: none;
-}
-
 .container {
     background: var(--bg);
     color: var(--fg);
 
     transition: 200ms ease;
+
+    min-height: 100vh;
+}
+
+/* generic styles */
+.emph {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+
+
+/* link formatting */
+a {
+    text-decoration: none;
+    font-weight: bold;
+
+    color: var(--fg);
+    display: inline-block;
+
+    transition: 200ms ease;
+}
+
+a:hover {
+    color: inherit;
+}
+
+/* color hovers */
+.green:hover {
+    color: var(--green);
+}
+
+.blue:hover {
+    color: var(--blue);
+}
+
+.red:hover {
+    color: var(--red);
+}
+
+.yellow:hover {
+    color: var(--yellow);
+}
+
+.purple:hover {
+    color: var(--purple);
 }

@@ -1,0 +1,10 @@
+.footer {
+    font-size: 16px;
+
+    position: absolute;
+    bottom: 16px;
+
+    transform: translateX(48px);
+
+    font-weight: 300;
+}

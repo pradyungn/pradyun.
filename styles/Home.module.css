@@ -3,12 +3,9 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
 
-    height: calc(100% - 40px);
-    width: 100%;
-    margin-top: -80px;
-    margin:0;
+    height: calc(100vh - 40px);
+    width: 100vw;
 
     background: var(--bg);
 
@@ -48,7 +45,7 @@
 @media(max-width: 620px) {
     .main{
         padding-left: 20px;
-        width: calc(100% - 20px);
+        width: calc(100vw - 20px);
     }
 
     .bubbles > div > a {
