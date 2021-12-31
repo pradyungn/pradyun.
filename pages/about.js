@@ -11,6 +11,7 @@ export default function Home() {
   return (
       <main className={styles.split + " container " + theme}>
         <div className={styles.hero}/>
+        <div className={styles.spacer}/>
         <div className={styles.content}>
             <NavBar hook={setTheme} curr={theme}/>
             <div className={styles.shpiel}>
@@ -24,7 +25,11 @@ export default function Home() {
 
                 <div>
                     If you'd like to peruse my resume without the hassle of exploring my website, you can glean a good idea of what I'm all about on my <a className="blue" target="_blank" href="https://linkedin.com/in/pradyun">LinkedIn</a> and <a className={"red"} target="_blank" href="https://github.com/pradyungn">Github</a>.
-                    However, for the programmer's equivalent of a "director's cut", check out <Link href="/files"><a className="yellow">the archive</a></Link> and my <Link href="/projects"><a className="purple">past projects</a></Link>. Happy hunting :)
+                    However, for the programmer's equivalent of a "director's cut", check out <Link href="/files"><a className="bloo">the archive</a></Link> and my <Link href="/projects"><a className="purple">past projects</a></Link>. Happy hunting :)
+                </div>
+
+                <div>
+                    In the event you ever need to contact me, my preferred form of communication (although exceedingly archaic) is email - shoot me one at <a href="mailto:pradyun2@illinois.edu" className="yellow">pradyun2@illinois.edu</a>!.
                 </div>
             </div>
         </div>

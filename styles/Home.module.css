@@ -3,13 +3,17 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+    position: absolute;
 
-    height: calc(100vh - 40px);
-    width: 100vw;
+    height: calc(100% - 40px);
+    width: 100%;
+    margin-top: -80px;
+    margin:0;
 
     background: var(--bg);
 
     transition: 200ms ease;
+    margin:0;
 }
 
 .header {
@@ -26,7 +30,7 @@
     }
 
     .li {
-        background: var(--blue);
+        background: var(--bloo);
     }
 
     .fa {
@@ -92,7 +96,7 @@
 }
 
 .li {
-    color: var(--blue);
+    color: var(--bloo);
 }
 
 .fa {

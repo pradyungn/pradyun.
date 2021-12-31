@@ -7,6 +7,9 @@
     --green: #8aac8b;
     --yellow: #aca98a;
     --purple: #8f8aac;
+    --bloo: #8a98ac;
+    --pink: #ac8aac;
+    --orange: #c6a679;
 
     --bg: #0f0f0f;
     --fg: #f0f0f0;
@@ -18,6 +21,9 @@
     --blue: #9ec3c4;
     --yellow: #c4c19e;
     --purple: #a39ec4;
+    --bloo: #a5b4cb;
+    --pink: #c49ec4;
+    --orange: #ceb188;
 
     --bg: #f0f0f0;
     --fg: #0f0f0f;
@@ -28,8 +34,8 @@ body,
 html {
     font-family: "adobe-garamond-pro", serif;
     font-weight: 400;
-    min-height: 100%;
     margin: 0;
+    height: 100%;
 }
 
 .container {
@@ -38,7 +44,7 @@ html {
 
     transition: 200ms ease;
 
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 /* generic styles */
@@ -82,4 +88,16 @@ a:hover {
 
 .purple:hover {
     color: var(--purple);
+}
+
+.bloo:hover {
+    color: var(--bloo);
+}
+
+.pink:hover {
+    color: var(--pink);
+}
+
+.orange:hover {
+    color: var(--orange);
 }
