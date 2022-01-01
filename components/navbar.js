@@ -6,7 +6,7 @@ export default function NavBar(props) {
 
     function HRLink(props) {
         return (
-            <div className={styles.link}>
+            <div className={styles.link + " " + props.active}>
                 <Link href={props.name}
                     className={styles.link}>{props.name}</Link>
                 <div className={styles.bar}/>
@@ -22,10 +22,10 @@ export default function NavBar(props) {
                 ><Link href="/">pradyun.</Link></div>
 
             <div className={styles.links}>
-                <HRLink name="about"/>
-                <HRLink name="files"/>
-                <HRLink name="projects"/>
-                <HRLink name="blog"/>
+                <HRLink name="about" active={props.about}/>
+                <HRLink name="files" active={props.files}/>
+                <HRLink name="projects" active={props.projects}/>
+                <HRLink name="blog" active={props.blog}/>
                 <div className={styles.toggle}>
                     <div onClick={() => props.hook(props.curr=="light" ? "dark" : "light")}
                         className={styles.link}>{buttontext}</div>

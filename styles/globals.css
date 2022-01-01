@@ -13,6 +13,8 @@
 
     --bg: #0f0f0f;
     --fg: #f0f0f0;
+    --lbg: #191919;
+    --lfg: #393939;
 }
 
 .light {
@@ -27,6 +29,8 @@
 
     --bg: #f0f0f0;
     --fg: #0f0f0f;
+    --lbg: #e7e7e7;
+    --lfg: #767676;
 }
 
 /* general formatting */
@@ -101,3 +105,42 @@ a:hover {
 .orange:hover {
     color: var(--orange);
 }
+
+.gr {
+    color: var(--gr);
+}
+
+.cy {
+    color: var(--blue);
+}
+
+.re {
+    color: var(--red);
+}
+
+.ye {
+    color: var(--yellow);
+}
+
+.pu {
+    color: var(--purple);
+}
+
+.bl {
+    color: var(--bloo);
+}
+
+.or {
+    color: var(--orange);
+}
+
+.pi {
+    color: var(--pink);
+}
+
+/* Hack for NavBar */
+
+.active > div {
+    transform: translate(0);
+}
+

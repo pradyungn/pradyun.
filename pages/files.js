@@ -1,9 +1,7 @@
-import Link from "next/link"
 import React, { useState } from 'react';
 import styles from '../styles/Files.module.css'
 
 import NavBar from '../components/navbar'
-import Footer from '../components/footer'
 
 export default function Home() {
   const [theme, setTheme] = useState("light");
@@ -13,7 +11,7 @@ export default function Home() {
         <div className={styles.hero}/>
         <div className={styles.spacer}/>
         <div className={styles.content}>
-            <NavBar hook={setTheme} curr={theme}/>
+            <NavBar hook={setTheme} curr={theme} files="active"/>
             <div className={styles.shpiel}>
                 <h1 className={styles.head + " emph"}>the file room</h1>
 
