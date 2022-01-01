@@ -61,6 +61,7 @@ export default function Home() {
                     <div className={styles.slideContent}>
                         <div className={styles.slideShpiel}>
                             <h1 className={ styles.slideHead + " or emph" }>hello</h1> 
+                            <div> Perhaps calling this a timeline is a bit inaccurate - it's more of a collection of some of the most significant and important experiences in my life as a maker... which basically sounds like a timeline.</div>
                             <div> Over the years, I've made all kinds of things for a multitude of reasons - education. working towards a problem, or for my own satisfaction.</div>
                             <div> While my rapt fascination is held by autonomous robotics and their associated subfields, I'm still rather varied in my fields of interest. So far I've had the luxury of exploring full stack development, machine learning, IoT hardware development, and more - I hope to only expand that list in the future at UIUC. </div>
                         </div>
@@ -68,12 +69,14 @@ export default function Home() {
                 </SwiperSlide>
                 <SwiperSlide>Slide 2</SwiperSlide>
                 <SwiperSlide>Slide 3</SwiperSlide>
+                <SwiperSlide>Slide 4</SwiperSlide>
+                <SwiperSlide>Slide 5</SwiperSlide>
             </Swiper>
         </div>
 
           {
               displayCurrent == 1 ? (
-                  <style jsx global>{`
+                  <style>{`
 html,
 body {
     height: 100%;
@@ -83,6 +86,22 @@ body {
               )
             : ""
           }
+
+          <style jsx global>{`
+          :root {
+                --swiper-pagination-bullet-vertical-gap: 5vh;
+            }
+            .swiper-pagination-bullet {
+                background: var(--lfg);
+                width: 12px;
+                height: 12px;
+                border-radius: 6px;
+            }
+
+            .swiper-pagination-bullets {
+                right: calc(5% - 6px) !important;
+            }
+              `} </style>
       </main>
   )
 }
