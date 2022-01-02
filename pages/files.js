@@ -3,7 +3,7 @@ import styles from '../styles/Files.module.css'
 
 import NavBar from '../components/navbar'
 
-export default function Home() {
+export default function Files() {
   const [theme, setTheme] = useState("light");
 
   return (

@@ -73,6 +73,27 @@ a:hover {
     color: inherit;
 }
 
+/* Idea for the future? */
+/* .content > div > a {
+ *     font-weight: normal;
+ *     background: linear-gradient(#FFFFFF00 55%, var(--green) 45%);
+ * }
+ * 
+ * .content > div > a:hover {
+ *     color: var(--fg);
+ *     background: var(--green);
+ *     animation: 300ms ease bgTransition 1 alternate;
+ * }
+ * 
+ * @keyframes bgTransition {
+ *     0% {
+ *         background: linear-gradient(#FFFFFF00 55%, var(--green) 45%);
+ *     }
+ *     100% {
+ *         background: var(--green);
+ *     }
+ * } */
+
 /* color hovers */
 .green:hover {
     color: var(--green);
@@ -106,6 +127,7 @@ a:hover {
     color: var(--orange);
 }
 
+/* text colors */
 .gr {
     color: var(--gr);
 }
