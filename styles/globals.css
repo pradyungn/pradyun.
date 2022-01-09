@@ -71,6 +71,7 @@ a {
 
 a:hover {
     color: inherit;
+    cursor: pointer;
 }
 
 /* Idea for the future? */

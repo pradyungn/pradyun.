@@ -20,6 +20,11 @@
     font-size: 64px;
 }
 
+.header:hover {
+    cursor: pointer;
+    transition: 200ms ease;
+}
+
 @media(min-width: 620px) {
     .main{
         align-items: center;

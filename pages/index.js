@@ -12,11 +12,18 @@ import NavBar from '../components/navbar'
 
 export default function Home() {
   const [theme, setTheme] = useState("light");
+  const [color, incrColor] = useState(0);
 
   const gh = "gh"
   const fb = "fb"
   const li = "li"
   const em = "em"
+
+  const colors = ["blue", "green", "red", "yellow", "bloo", "purple", "bloo", "pink", "orange"]
+
+  function headerClick() {
+    incrColor((color+1)%colors.length)
+  }
 
   if (typeof window !== 'undefined' && window.innerWidth < 620) {
       fb = ( <FaFacebookF/> )
@@ -29,7 +36,8 @@ export default function Home() {
       <main className={"container " + theme}>
         <NavBar hook={setTheme} curr={theme}/>
         <div className={styles.main}>
-            <div className={ "emph " + styles.header}>
+            <div className={ `${colors[color]} emph ` + styles.header}
+                 onClick={() => headerClick()}>
                 pradyun narkadamilli
             </div>
             <div className={styles.shpiel}>

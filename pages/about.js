@@ -46,7 +46,7 @@ export default function About() {
                 <h1 className={styles.head + " emph"}>a little about me</h1>
                 <p>
                     I'm a freshman at UIUC, pursuing a B.E in Computer Engineering. I'm passionate about making things for the sake of making things - be that as a solution, a hobby, or else.
-                    Perhaps that's a bit vague? In that case, I encourage you to view this convenient <a className="orange" onClick={() => initTimeline()} href="#">timeline</a>.
+                    Perhaps that's a bit vague? In that case, I encourage you to view this convenient <a className="orange" onClick={() => initTimeline()}>timeline</a>.
                 </p>
 
                 <p>
