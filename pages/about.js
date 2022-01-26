@@ -18,6 +18,9 @@ export default function About() {
 
   const orientations = [styles.flat, styles.popUp]
 
+  const stylesets = {"vertical": styles.vertical,
+      "horizontal": styles.horizontal}
+
     function dirChange() {
         const width = window.innerWidth
         width > 768 ? setDirection("vertical") : setDirection("horizontal")
