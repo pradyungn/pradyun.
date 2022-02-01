@@ -1,3 +1,9 @@
+//  ____  _   _
+// |  _ \| \ | | Pradyun Narkadamilli
+// | |_) |  \| | https://pradyungn.tech
+// |  __/| |\  | MIT License
+// |_|   |_| \_| Copyright 2022 Pradyun Narkadamilli
+
 import {
     FaGithubAlt,
     FaFacebookF,
