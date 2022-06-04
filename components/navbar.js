@@ -24,13 +24,17 @@ export default function NavBar(props) {
             <div className={styles.links}>
                 <HRLink name="about" active={props.about}/>
                 <HRLink name="files" active={props.files}/>
-                <HRLink name="projects" active={props.projects}/>
+                <HRLink name="work" active={props.work}/>
                 <HRLink name="blog" active={props.blog}/>
                 <div className={styles.toggle}>
                     <div onClick={() => props.hook(props.curr=="light" ? "dark" : "light")}
                         className={styles.link}>{buttontext}</div>
                 </div> 
             </div>
+          <div className={styles.betac}>
+            <div className={styles.bmsg}>This website is a work in progress 🔨</div>
+            <a href="#" className={styles.beta}>β</a>
+          </div>
         </div>
     )
 }

@@ -49,12 +49,11 @@ export default function About() {
                 <h1 className={styles.head + " emph"}>a little about me</h1>
                 <p>
                     I'm a freshman at UIUC, pursuing a B.E in Computer Engineering. I'm passionate about making things for the sake of making things - be that as a solution, a hobby, or else.
-                    Perhaps that's a bit vague? In that case, I encourage you to view this convenient <a className="orange" onClick={() => initTimeline()}>timeline</a>.
                 </p>
 
                 <p>
                     If you'd like to peruse my resume without the hassle of exploring my website, you can glean a good idea of what I'm all about on my <a className="blue" target="_blank" href="https://linkedin.com/in/pradyun">LinkedIn</a> and <a className={"red"} target="_blank" href="https://github.com/pradyungn">Github</a>.
-                    However, for the programmer's equivalent of a "director's cut", check out <Link href="/files"><a className="bloo">the archive</a></Link> and my <Link href="/projects"><a className="purple">past projects</a></Link>. Happy hunting :)
+                    However, for the programmer's equivalent of a "director's cut", check out <Link href="/files"><a className="blue">the archive</a></Link> and my <Link href="/work"><a className="purple">past projects</a></Link>. Happy hunting :)
                 </p>
 
                 <p>
@@ -62,51 +61,6 @@ export default function About() {
                 </p>
             </div>
         </div>
-
-        <div className={styles.overlay} onClick={() => timeLine(0)}/>
-        <div className={styles.timeline}>
-            <div className={styles.exitButton} onClick={() => timeLine(0)}>
-                <IoClose/>
-            </div>
-            <Swiper modules={[Navigation, Pagination, Keyboard]}
-                spaceBetween={0}
-                slidesPerView={1}
-                direction={direction}
-                navigation
-                keyboard
-                pagination={{clickable: "true"}}
-                className={styles.swiper}>
-                <SwiperSlide className={styles.slide}>
-                    <div className={styles.slideHero}/>
-                    <div className={styles.slideSpacer}/>
-                    <div className={styles.slideContent}>
-                        <div className={styles.slideShpiel}>
-                            <h1 className={ styles.slideHead + " or emph" }>hello</h1> 
-                            <p> Over the years, I've made all kinds of things for a multitude of reasons - education. working towards a problem, or for my own satisfaction.</p>
-                            <p> While my rapt fascination is held by autonomous robotics and their associated subfields, I'm still rather varied in my fields of interest. So far I've had the luxury of exploring full stack development, machine learning, IoT hardware development, and more - I hope to only expand that list in the future at UIUC. </p>
-                            <p> Perhaps calling this a timeline is a bit inaccurate - it's more of a collection of some of the most significant and important experiences in my life as a maker... which basically sounds like a timeline. And honestly, it might be.</p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-            </Swiper>
-        </div>
-
-          {
-              displayCurrent == 1 ? (
-                  <style>{`
-html,
-body {
-    height: 100%;
-    overflow: hidden;
-}
-                      `} </style>
-              )
-            : ""
-          }
 
           <style jsx global>{`
           :root {
