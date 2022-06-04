@@ -47,7 +47,6 @@ html {
     color: var(--fg);
 
     transition: 200ms ease;
-
     min-height: 100%;
 }
 
@@ -95,42 +94,10 @@ a:hover {
  *     }
  * } */
 
-/* color hovers */
-.green:hover {
-    color: var(--green);
-}
-
-.blue:hover {
-    color: var(--blue);
-}
-
-.red:hover {
-    color: var(--red);
-}
-
-.yellow:hover {
-    color: var(--yellow);
-}
-
-.purple:hover {
-    color: var(--purple);
-}
-
-.bloo:hover {
-    color: var(--bloo);
-}
-
-.pink:hover {
-    color: var(--pink);
-}
-
-.orange:hover {
-    color: var(--orange);
-}
 
 /* text colors */
 .gr {
-    color: var(--gr);
+    color: var(--green);
 }
 
 .cy {
@@ -162,7 +129,6 @@ a:hover {
 }
 
 /* Hack for NavBar */
-
 .active > div {
     transform: translate(0);
 }

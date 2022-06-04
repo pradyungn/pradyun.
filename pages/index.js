@@ -12,20 +12,18 @@ import {
 
 import { GrMail } from "react-icons/gr"
 
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import styles from '../styles/Home.module.css'
 import NavBar from '../components/navbar'
+import ThemeCtx from '../context/theme'
 
 export default function Home() {
-  const [theme, setTheme] = useState("light");
-  const [color, incrColor] = useState(0);
+  const [theme, setTheme] = useContext(ThemeCtx)
 
   const gh = "gh"
   const fb = "fb"
   const li = "li"
   const em = "em"
-
-  const colors = ["blue", "green", "red", "yellow", "bloo", "purple", "bloo", "pink", "orange"]
 
   function headerClick() {
     incrColor((color+1)%colors.length)
@@ -40,10 +38,9 @@ export default function Home() {
 
   return (
       <main className={"container " + theme}>
-        <NavBar hook={setTheme} curr={theme}/>
+        <NavBar/>
         <div className={styles.main}>
-            <div className={ `${colors[color]} emph ` + styles.header}
-                 onClick={() => headerClick()}>
+            <div className={ `emph ${styles.header}`}>
                 pradyun narkadamilli
             </div>
             <div className={styles.shpiel}>

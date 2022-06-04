@@ -1,0 +1,31 @@
+.green:hover {
+    color: var(--green);
+}
+
+.blue:hover {
+    color: var(--blue);
+}
+
+.red:hover {
+    color: var(--red);
+}
+
+.yellow:hover {
+    color: var(--yellow);
+}
+
+.purple:hover {
+    color: var(--purple);
+}
+
+.bloo:hover {
+    color: var(--bloo);
+}
+
+.pink:hover {
+    color: var(--pink);
+}
+
+.orange:hover {
+    color: var(--orange);
+}

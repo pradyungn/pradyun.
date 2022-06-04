@@ -40,7 +40,7 @@
     min-width: 100%;
     min-height: 2px;
     background: var(--fg);
-    transform: translate(100%);
+    transform: translate(105%);
     transition: 200ms ease;
     margin-top: -2px;
 }

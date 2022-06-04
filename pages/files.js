@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
 import styles from '../styles/Files.module.css'
+import { useContext } from 'react'
+import ThemeCtx from '../context/theme'
 
 import NavBar from '../components/navbar'
 
 export default function Files() {
-  const [theme, setTheme] = useState("light");
 
   function File(props) {
     return (
@@ -17,12 +17,14 @@ export default function Files() {
     )
   }
 
+  const [theme, setTheme] = useContext(ThemeCtx)
+
   return (
-      <main className={styles.split + " container " + theme}>
+    <main className={`${styles.split} ${theme} container`}>
         <div className={styles.hero}/>
         <div className={styles.spacer}/>
         <div className={styles.content}>
-            <NavBar hook={setTheme} curr={theme} files="active"/>
+            <NavBar files="active"/>
             <div className={styles.shpiel}>
                 <h1 className={styles.head + " emph"}>the archives</h1>
 
@@ -31,10 +33,6 @@ export default function Files() {
                 </div>
 
               <div className={styles.filegrid}>
-                <File path="Resume.pdf" name="resume"
-                      description="a succinct summary of my work experience"/>
-                <File path="Resume.pdf" name="resume"
-                      description="a succinct summary of my work experience"/>
                 <File path="Resume.pdf" name="resume"
                       description="a succinct summary of my work experience"/>
               </div>

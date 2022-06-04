@@ -21,7 +21,6 @@
 }
 
 .header:hover {
-    cursor: pointer;
     transition: 200ms ease;
 }
 
