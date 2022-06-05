@@ -12,7 +12,8 @@ export default function About() {
   const [displayCurrent, timeLine] = useState(0);
 
   return (
-      <Container active="about" theme={theme} hero={styles.hero}>
+      <Container active="about" theme={theme} hero={styles.hero}
+                 desc="an (exceedingly brief) 21st century myspace page">
           <h1 className={styles.head + " emph"}>a little about me</h1>
           <p>
               I'm a freshman at UIUC, pursuing a B.E in Computer Engineering. I'm passionate about making things for the sake of making things - be that as a solution, a hobby, or else.

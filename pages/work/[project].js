@@ -10,6 +10,8 @@ import ReactMarkdown from 'react-markdown'
 import { useContext } from 'react'
 import ThemeCtx from '../../context/theme'
 
+import Meta from '../../components/meta'
+
 export default function Project(props) {
   const [theme, setTheme] = useContext(ThemeCtx)
 
@@ -21,6 +23,8 @@ export default function Project(props) {
 
   return (
     <main className={theme + " container " + styles.page}>
+      <Meta siteTitle={fm.title}
+        description={"blurb" in fm ? fm.blurb : `a brief description of my ${fm.title} project!`}/>
       <Link href="/work"><a className={styles.back}><FiArrowUpLeft/></a></Link>
       <div className={`${styles.image} ${styles[color]}`}/>
       <div className={styles.content}>

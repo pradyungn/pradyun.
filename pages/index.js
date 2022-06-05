@@ -16,6 +16,7 @@ import React, { useContext } from 'react';
 import styles from '../styles/Home.module.css'
 import NavBar from '../components/navbar'
 import ThemeCtx from '../context/theme'
+import Meta from '../components/meta'
 
 export default function Home() {
   const [theme, setTheme] = useContext(ThemeCtx)
@@ -38,6 +39,7 @@ export default function Home() {
 
   return (
       <main className={"container " + theme}>
+        <Meta siteTitle="pradyun"/>
         <NavBar/>
         <div className={styles.main}>
             <div className={ `emph ${styles.header}`}>

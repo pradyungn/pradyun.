@@ -23,7 +23,8 @@ export default function Work(props) {
   const [theme, setTheme] = useContext(ThemeCtx)
 
   return (
-    <Container active="work" theme={theme} hero={styles.hero}>
+    <Container active="work" theme={theme} hero={styles.hero}
+      desc="A conveniently organized list of all of my major projects! I tend to update this list after I've completed new projects, so this list may not alwayas be up-to-date.">
       <h1 className={styles.head + " emph"}>past work</h1>
 
       <div>

@@ -20,7 +20,8 @@ export default function Files() {
   const [theme, setTheme] = useContext(ThemeCtx)
 
   return (
-    <Container active="files" theme={theme} hero={styles.hero}>
+    <Container active="files" theme={theme} hero={styles.hero}
+      desc="A collection of documents that I found worth sharing :)">
       <h1 className={styles.head + " emph"}>the archives</h1>
 
       <div>

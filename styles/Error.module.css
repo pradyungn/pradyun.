@@ -1,0 +1,40 @@
+.main {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+
+    height: calc(100% - 42px);
+    width: 100%;
+
+    margin-top: -80px;
+    margin:0;
+
+    background: var(--bg);
+
+    transition: 200ms ease;
+    margin:0;
+
+    font-size: 22px;
+}
+
+.header {
+  font-size: 64px;
+  font-family: Outfit, Roboto, sans-serif;
+  font-weight: 600;
+}
+
+.bar {
+  height: 3px;
+  background: var(--fg);
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: -3px;
+}
+
+.text {
+  position: relative;
+  display: block;
+  margin-left: 50px;
+}
