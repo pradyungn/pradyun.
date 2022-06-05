@@ -13,7 +13,7 @@ export default function Container(props) {
       <Meta siteTitle={props.active.trim().replace(/^\w/, (c) => c.toUpperCase())}
             description={"desc" in props ?
                          props.desc : "Maker of things. Engineering afficonado."}
-            img={`${props.active}.webp`}/>
+        img={`${props.active}.webp`} path={props.active}/>
       <div className={`${styles.hero} ${props.hero}`}/>
       <div className={styles.spacer}/>
       <div className={styles.content}>

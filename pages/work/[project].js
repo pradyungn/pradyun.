@@ -23,7 +23,7 @@ export default function Project(props) {
 
   return (
     <main className={theme + " container " + styles.page}>
-    <Meta siteTitle={fm.title} img={`${color}.webp`}
+    <Meta siteTitle={fm.title} img={`${color}.webp`} path={`work/${props.project}`}
         description={"blurb" in fm ? fm.blurb : `a brief description of my ${fm.title} project!`}/>
       <Link href="/work"><a className={styles.back}><FiArrowUpLeft/></a></Link>
       <div className={`${styles.image} ${styles[color]}`}/>
@@ -40,6 +40,6 @@ Project.getInitialProps = async function(context) {
     const content = await import(`../../projects/${project}.md`)
     const data = matter(content.default)
     return {
-        ...data,
+      ...data, "project": project
     }
 }
