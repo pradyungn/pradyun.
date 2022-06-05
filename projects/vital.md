@@ -1,6 +1,6 @@
 ---
 title: Vital
-profile: pink
+profile: green
 ---
 
 Our submission to LaunchHacks I. As implied by its name, Vital aggregated and reported the "vitals" of a plant - like environmental humidity/temperature, soil moisture, light levels, etc. - and made that data easily available to users. We tried to make Vital more than a simple "fetch and report" project by offering the most integrations we could produce within the time constraints - including Google Assistant skills, Amazon Alexa routines, and more.

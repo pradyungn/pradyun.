@@ -23,7 +23,7 @@ export default function Project(props) {
 
   return (
     <main className={theme + " container " + styles.page}>
-      <Meta siteTitle={fm.title}
+    <Meta siteTitle={fm.title} img={`${color}.webp`}
         description={"blurb" in fm ? fm.blurb : `a brief description of my ${fm.title} project!`}/>
       <Link href="/work"><a className={styles.back}><FiArrowUpLeft/></a></Link>
       <div className={`${styles.image} ${styles[color]}`}/>

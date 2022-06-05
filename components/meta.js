@@ -7,6 +7,8 @@ export default (props)=> (
     <meta name="description" content={ "description" in props ? props.description : "Maker of things. Engineering afficionado. " }/>
     <meta name="og:description" content={ "description" in props ? props.description : "Maker of things. Engineering afficionado. " }/>
     <meta name="og:title" content={ props.siteTitle }/>
-    <meta name="og:image" content="https://pradyun.vercel.app/me.webp"/>
+    <meta name="og:image" content={
+      `https://pradyun.vercel.app/${"img" in props ? props.img : "me.webp"}`
+    }/>
   </Head>
 )
