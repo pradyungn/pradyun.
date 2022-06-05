@@ -84,3 +84,37 @@
     justify-content: start;
   }
 }
+
+.red {
+  background-image: url("../public/red.webp")
+}
+
+
+.purple {
+  background-image: url("../public/purple.webp")
+}
+
+
+.orange {
+  background-image: url("../public/orange.webp")
+}
+
+.blue {
+  background-image: url("../public/blue.webp")
+}
+
+.cyan {
+  background-image: url("../public/cyan.webp")
+}
+
+.pink {
+  background-image: url("../public/pink.webp")
+}
+
+.yellow {
+  background-image: url("../public/yellow.webp")
+}
+
+.green {
+  background-image: url("../public/green.webp")
+}

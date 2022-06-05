@@ -5,7 +5,7 @@ import hover from '../../styles/Hover.module.css'
 import matter from 'gray-matter'
 import Link from 'next/link'
 
-import NavBar from '../../components/navbar'
+import Container from '../../components/container'
 import ThemeCtx from '../../context/theme'
 
 const colors = {
@@ -23,24 +23,17 @@ export default function Work(props) {
   const [theme, setTheme] = useContext(ThemeCtx)
 
   return (
-      <main className={styles.split + " container " + theme}>
-        <div className={styles.hero}/>
-        <div className={styles.spacer}/>
-        <div className={styles.content}>
-            <NavBar work="active"/>
-            <div className={styles.shpiel}>
-                <h1 className={styles.head + " emph"}>past work</h1>
+    <Container active="work" theme={theme} hero={styles.hero}>
+      <h1 className={styles.head + " emph"}>past work</h1>
 
-                <div>
-                  Over the years, I've worked on a multitude of projects - some as a hobby, others with competition in mind. Here, I briefly detail the process and design of some of those works.
-                </div>
+      <div>
+        Over the years, I've worked on a multitude of projects - some as a hobby, others with competition in mind. Here, I briefly detail the process and design of some of those works.
+      </div>
 
-              {props.projects.map(proj => (
-                <Link key={proj.document.data.title} href={`/work/${proj.slug}`}><a>{proj.document.data.title}</a></Link>
-              ))}
-            </div>
-        </div>
-      </main>
+      {props.projects.map(proj => (
+        <Link key={proj.document.data.title} href={`/work/${proj.slug}`}><a>{proj.document.data.title}</a></Link>
+      ))}
+    </Container>
   )
 }
 

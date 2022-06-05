@@ -12,7 +12,7 @@ import {
 
 import { GrMail } from "react-icons/gr"
 
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import styles from '../styles/Home.module.css'
 import NavBar from '../components/navbar'
 import ThemeCtx from '../context/theme'

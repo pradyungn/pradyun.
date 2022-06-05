@@ -1,87 +1,11 @@
-.split {
-    display: flex;
-}
-
-@media(max-width: 620px) {
-    .split {
-        flex-direction: column;
-    }
-
-    .hero {
-        width: 100vw;
-        height: 30vh;
-
-        z-index: 1;
-    }
-
-    .content {
-        z-index: 2;
-        min-height: 70vh;
-    }
-
-    .shpiel {
-        min-height: calc(70vh - 80px);
-    }
-}
-
-@media(min-width: 621px) {
-    .hero {
-        position: fixed;
-
-        width: 37.5vw;
-        height: 100vh;
-    }
-
-    .spacer {
-        width: 37.5vw;
-        flex: 0 0 auto;
-    }
-
-    .content {
-        min-height: calc(100vh-48px);
-    }
-
-    .shpiel {
-        min-height: calc(100vh - 80px);
-    }
+.head {
+  font-size: 64px;
+  color: var(--blue);
+  margin-bottom: 10px;
 }
 
 .hero {
-    overflow: hidden;
-
-    background-image: url("../public/files.webp");
-    background-size: cover;
-    background-position: center center;
-}
-
-.content {
-    width: 100%;
-}
-
-.head {
-    font-size: 64px;
-    color: var(--blue);
-    margin-bottom: 10px;
-}
-
-.shpiel {
-    display: flex;
-    flex-direction: column;
-
-    margin-left: 48px;
-    margin-right: 48px;
-    margin-top: 0;
-    margin-bottom: 0;
-
-    font-size: 20px;
-    max-width: 920px;
-
-    justify-content: center;
-    padding-bottom: 38px;
-}
-
-.shpiel > div {
-    margin-bottom: 10px;
+  background-image: url("../public/files.webp")
 }
 
 .filecont {

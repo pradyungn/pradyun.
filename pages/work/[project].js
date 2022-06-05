@@ -22,8 +22,7 @@ export default function Project(props) {
   return (
     <main className={theme + " container " + styles.page}>
       <Link href="/work"><a className={styles.back}><FiArrowUpLeft/></a></Link>
-      <div className={styles.image}
-           style={{backgroundImage: `url(../${color}.webp)`}}/>
+      <div className={`${styles.image} ${styles[color]}`}/>
       <div className={styles.content}>
         <h1 className={color.slice(0,2)}>{fm.title}</h1>
         <ReactMarkdown children={mdb}/>
