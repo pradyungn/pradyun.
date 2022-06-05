@@ -36,7 +36,7 @@ export default function Work(props) {
                 </div>
 
               {props.projects.map(proj => (
-                <Link href={`/work/${proj.slug}`}><a>{proj.document.data.title}</a></Link>
+                <Link key={proj.document.data.title} href={`/work/${proj.slug}`}><a>{proj.document.data.title}</a></Link>
               ))}
             </div>
         </div>

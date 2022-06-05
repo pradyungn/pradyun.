@@ -20,7 +20,7 @@
     }
 
     .shpiel {
-        min-height: calc(70vh - 78px);
+        min-height: calc(70vh - 80px);
     }
 }
 
@@ -42,7 +42,7 @@
     }
 
     .shpiel {
-        min-height: calc(100vh - 78px);
+        min-height: calc(100vh - 80px);
     }
 }
 

@@ -92,7 +92,10 @@
 .bubbles > div:hover {
     background: transparent;
     font-weight: bold;
-    font-size: 28px;
+}
+
+.bubbles > div:hover > a {
+  transform: scale(1.6)
 }
 
 .gh {
