@@ -7,3 +7,16 @@
 .hero {
   background-image: url("../public/work.webp");
 }
+
+.proj {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 3px;
+}
+
+.pt {
+  font-weight: 400;
+  font-family: Outfit;
+
+  color: var(--lfg);
+}

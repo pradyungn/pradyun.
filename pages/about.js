@@ -20,8 +20,8 @@ export default function About() {
           </p>
 
           <p>
-            If you'd like to peruse my resume without the hassle of exploring my website, you can glean a good idea of what I'm all about on my <a className={hover.blue} target="_blank" href="https://linkedin.com/in/pradyun">LinkedIn</a> and <a className={hover.red} target="_blank" href="https://github.com/pradyungn">Github</a>.
-            However, for the programmer's equivalent of a "director's cut", check out <Link href="/files"><a className={hover.blue}>the archive</a></Link> and my <Link href="/work"><a className={hover.purple}>past projects</a></Link>. Happy hunting :)
+            If you'd like to peruse my resume without the hassle of exploring this website, you can glean a good idea of what I'm all about on my <a className={hover.blue} target="_blank" href="https://linkedin.com/in/pradyun">LinkedIn</a> and <a className={hover.red} target="_blank" href="https://github.com/pradyungn">Github</a>.
+            However, for the programmer's equivalent of a "director's cut", check out <Link href="/files"><a className={hover.cyan}>the archive</a></Link> and my <Link href="/work"><a className={hover.purple}>past projects</a></Link>. Happy hunting :)
           </p>
 
           <p>

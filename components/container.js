@@ -3,10 +3,9 @@ import Meta from './meta'
 import styles from "../styles/Container.module.css"
 
 export default function Container(props) {
-  var prop = {}
-  if ("active" in props) {
+  var prop = props.nba != null ? props.nba : {}
+  if (props.active != null)
     prop[props.active] = "active"
-  }
 
   return (
     <main className={`${styles.split} container ${props.theme}`}>

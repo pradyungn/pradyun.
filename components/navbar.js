@@ -34,10 +34,13 @@ export default function NavBar(props) {
                         className={styles.link}>{buttontext}</div>
                 </div> 
             </div>
-          <div className={styles.betac}>
-            <div className={styles.bmsg}>This website is a work in progress 🔨</div>
-            <a href="https://www.youtube.com/watch?v=HdVg-2jn2OU" target="_blank" className={styles.beta}>β</a>
-          </div>
+            {
+              "beta" in props && props["beta"]=="on" ? (
+              <div className={styles.betac}>
+                <div className={styles.bmsg}>This page is a work in progress 🔨</div>
+                <a href="https://www.youtube.com/watch?v=HdVg-2jn2OU" target="_blank" className={styles.beta}>β</a>
+                </div>) : (null)
+            }
         </div>
     )
 }

@@ -24,15 +24,18 @@ export default function Work(props) {
 
   return (
     <Container active="work" theme={theme} hero={styles.hero}
-      desc="A conveniently organized list of all of my major projects! I tend to update this list after I've completed new projects, so this list may not alwayas be up-to-date.">
+               nba={{ "beta":"on" }}
+               desc="A conveniently organized list of all of my major projects! I tend to update this list after I've completed new projects, so this list may not alwayas be up-to-date.">
       <h1 className={styles.head + " emph"}>past work</h1>
 
-      <div>
+      <div style={{marginBottom: "10px"}}>
         Over the years, I've worked on a multitude of projects - some as a hobby, others with competition in mind. Here, I briefly detail the process and design of some of those works.
       </div>
 
       {props.projects.map(proj => (
-        <Link key={proj.document.data.title} href={`/work/${proj.slug}`}><a>{proj.document.data.title}</a></Link>
+        <div className={styles.proj}>
+          <Link key={proj.slug} href={`/work/${proj.slug}`}><a className={`${ styles.pt } ${hover[proj.document.data.profile]}`}>{proj.document.data.title}</a></Link>
+        </div>
       ))}
     </Container>
   )
