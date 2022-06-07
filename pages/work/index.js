@@ -21,7 +21,6 @@ const colors = {
 
 export default function Work(props) {
   const [theme, setTheme] = useContext(ThemeCtx)
-  console.log(props.projects)
 
   return (
     <Container active="work" theme={theme} hero={styles.hero}
