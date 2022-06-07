@@ -9,7 +9,7 @@ export default function NavBar(props) {
     function HRLink(props) {
         return (
             <div className={styles.link + " " + props.active}>
-                <Link href={props.name}
+            <Link href={`/${props.name}`}
                     className={styles.link}>{props.name}</Link>
                 <div className={styles.bar}/>
             </div> 

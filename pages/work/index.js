@@ -21,6 +21,7 @@ const colors = {
 
 export default function Work(props) {
   const [theme, setTheme] = useContext(ThemeCtx)
+  console.log(props.projects)
 
   return (
     <Container active="work" theme={theme} hero={styles.hero}
@@ -33,8 +34,8 @@ export default function Work(props) {
       </div>
 
       {props.projects.map(proj => (
-        <div className={styles.proj}>
-          <Link key={proj.slug} href={`/work/${proj.slug}`}><a className={`${ styles.pt } ${hover[proj.document.data.profile]}`}>{proj.document.data.title}</a></Link>
+        <div key={proj.slug} className={styles.proj}>
+          <Link href={`/work/${proj.slug}`}><a className={`${ styles.pt } ${hover[proj.document.data.profile]}`}>{proj.document.data.title}</a></Link>
         </div>
       ))}
     </Container>
@@ -42,8 +43,11 @@ export default function Work(props) {
 }
 
 Work.getInitialProps = async function() {
-    const projects = (context => {
-        const keys = context.keys()
+    const projects= (context => {
+        const priority = ["./kami.md", "./flameless.md", "./vital.md"]
+        var keys = context.keys()
+        keys = keys.filter(el => !(priority.includes(el)))
+        keys = priority.concat(keys)
         const values = keys.map(context)
         const data = keys.map((key, index) => {
             const slug = key
