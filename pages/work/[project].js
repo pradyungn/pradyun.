@@ -1,25 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import styles from '../../styles/Markdown.module.css'
 import Link from 'next/link';
-import {FiArrowUpLeft} from 'react-icons/fi'
+import {FiArrowUpLeft, FiLink} from 'react-icons/fi'
 import Image from 'next/image'
 
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 
-import { useContext } from 'react'
 import ThemeCtx from '../../context/theme'
 
 import Meta from '../../components/meta'
 
 export default function Project(props) {
   const [theme, setTheme] = useContext(ThemeCtx)
+  const [open, toggle] = useState(false)
 
   const mdb = props.content
   const fm = props.data
-  console.log(fm)
 
   const color = 'profile' in fm ? fm.profile : "purple"
+
+  function Links() {
+    const links = Object.keys(fm).filter(ob => ob.includes("link-"))
+
+    if (links.length > 0){
+      return (
+        <div className={styles.links}>
+            <div className={styles.hyper}>
+            {
+              links.map(link => (
+                <a href={fm[link]}>
+                <div className={`${styles.link} ${open ? styles.open : styles.close}`} key={link}>
+                    {link.replace("link-", "")}
+                  </div>
+                </a>
+              ))
+            }
+            </div>
+        <div className={styles.linkbutton} onClick={() => toggle(!open)}><FiLink/></div>
+
+        </div>
+      )}
+    else return (null)
+  }
 
   return (
     <main className={theme + " container " + styles.page}>
@@ -31,6 +54,7 @@ export default function Project(props) {
         <h1 className={color.slice(0,2)}>{fm.title}</h1>
         <ReactMarkdown children={mdb}/>
       </div>
+      <Links/>
     </main>
   )
 }
