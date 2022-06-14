@@ -23,6 +23,7 @@
   font-size: 64px;
   font-family: Outfit, Roboto, sans-serif;
   font-weight: 600;
+  color: var(--fg)
 }
 
 .bar {

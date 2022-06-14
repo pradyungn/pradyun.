@@ -10,6 +10,7 @@ import ReactMarkdown from 'react-markdown'
 import ThemeCtx from '../../context/theme'
 
 import Meta from '../../components/meta'
+import Beta from "../../components/beta-badge"
 
 export default function Project(props) {
   const [theme, setTheme] = useContext(ThemeCtx)
@@ -29,8 +30,8 @@ export default function Project(props) {
             <div className={styles.hyper}>
             {
               links.map(link => (
-                <a href={fm[link]}>
-                <div className={`${styles.link} ${open ? styles.open : styles.close}`} key={link}>
+                <a href={fm[link]} className={`${styles.link} ${open ? styles.open : styles.close}`}>
+                <div key={link}>
                     {link.replace("link-", "")}
                   </div>
                 </a>
@@ -55,6 +56,9 @@ export default function Project(props) {
         <ReactMarkdown children={mdb}/>
       </div>
       <Links/>
+      {
+        "beta" in fm && fm["beta"]=="on" ? (<Beta/>) : (null)
+      }
     </main>
   )
 }

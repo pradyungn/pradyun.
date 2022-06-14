@@ -2,6 +2,7 @@ import {RiLightbulbFlashLine, RiLightbulbFlashFill} from "react-icons/ri"
 import Link from 'next/link'
 import styles from "../styles/NavBar.module.css"
 import {useContext} from 'react'
+import Beta from './beta-badge'
 import ThemeCtx from '../context/theme'
 
 export default function NavBar(props) {
@@ -35,11 +36,7 @@ export default function NavBar(props) {
                 </div> 
             </div>
             {
-              "beta" in props && props["beta"]=="on" ? (
-              <div className={styles.betac}>
-                <div className={styles.bmsg}>This page is a work in progress 🔨</div>
-                <a href="https://www.youtube.com/watch?v=HdVg-2jn2OU" target="_blank" className={styles.beta}>β</a>
-                </div>) : (null)
+              "beta" in props && props["beta"]=="on" ? (<Beta/>) : (null)
             }
         </div>
     )

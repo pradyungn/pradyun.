@@ -7,4 +7,4 @@ My submission to DVHacks in January 2019! SpeakAR was a project that projected t
 
 * As stated before, this was written in the Flutter framework using Dart. We were one of the early adopters, using flutter a mere 2 weeks after release
 * The ML was handled in two ways - initially we tried to compile a tensoflow lite model, but due to incompatibilities with our system, we were unable to do so (and this is when I ditched Windows).
-* We instead handled the AI using Firebase's object detection model
+  * We instead handled the AI using Firebase's object detection model
