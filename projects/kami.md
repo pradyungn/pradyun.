@@ -3,7 +3,6 @@ title: Kami
 profile: blue
 link-gh: https://github.com/pradyungn/kami
 link-dp: https://devpost.com/software/kami
-beta: on
 ---
 One of the largely overlooked problems in today's technological era is information overload - information has become so pervasive and easy-to-access that our lifestyles demand us to consume increasing amounts of information in a rapidly declining amount of time. With our submission to BridgeHacks, we hoped to alleviate some of this strain by allowing users to more efficiently and rapidly intake and process information - condensing endless filler down to its most important points.
 * We first made an API that was served using the Flask framework. Its function was twofold.
