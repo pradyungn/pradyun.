@@ -34,7 +34,7 @@ export default function Work(props) {
 
       {props.projects.map(proj => (
         <div key={proj.slug} className={styles.proj}>
-          <Link href={`/work/${proj.slug}`}><a className={`${ styles.pt } ${hover[proj.document.data.profile]}`}>{proj.document.data.title}</a></Link>
+          <Link href={`/work/${proj.slug}`}><a className={`${ styles.pt } ${hover[proj.profile]}`}>{proj.title}</a></Link>
         </div>
       ))}
     </Container>
@@ -55,10 +55,11 @@ Work.getInitialProps = async function() {
                 .slice(0, -1)
                 .join('.')
             const value = values[index]
-            const document = matter(value.default)
+            const init = matter(value.default)
             return {
-                document,
-                slug,
+              slug,
+              "profile": init.data.profile,
+              "title": init.data.title
             }
         })
         return data
