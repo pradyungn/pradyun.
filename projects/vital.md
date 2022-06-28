@@ -2,6 +2,8 @@
 title: Vital
 profile: green
 link-dp: https://devpost.com/software/vital-b1msah
+img-1: vital.jpg
+img-2: bamboo.jpg
 ---
 
 Our submission to LaunchHacks I. As implied by its name, Vital aggregated and reported the "vitals" of a plant - like environmental humidity/temperature, soil moisture, light levels, etc. - and made that data easily available to users. We tried to make Vital more than a simple "fetch and report" project by offering the most integrations we could produce within the time constraints - including Google Assistant skills, Amazon Alexa routines, and more.

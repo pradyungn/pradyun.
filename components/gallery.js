@@ -12,18 +12,20 @@ import 'swiper/css/pagination'
 const Overlay = ({images, hook, data}) => (
   <div className={styles.overlay}>
     <div className={styles.bgmask} onClick={()=>hook(false)}/>
-    <Swiper className={styles.carousel} modules={[Pagination, Keyboard]}
+      <div className={styles.carousel}>
+        <Swiper className={styles.swiper} modules={[Pagination, Keyboard]}
             spaceBetween={0} slidesPerView={1}
             direction="horizontal"
             keyboard pagination={{clickable:"true"}}>
-      {
-        images.map(link=>(<SwiperSlide className={styles.swipe}>
-                          <img className={styles.coverimg} loading="lazy" src={"/"+data[link]}/>
-                        </SwiperSlide>))
-      }
-    </Swiper>
+            {
+            images.map(link=>(<SwiperSlide className={styles.swipe}>
+            <img className={styles.coverimg} loading="lazy" src={"/"+data[link]}/>
+                </SwiperSlide>))
+            }
+        </Swiper>
 
-    <div className={styles.exit} onClick={()=>hook(false)}><FiMinimize2/></div>
+        <div className={styles.exit} onClick={()=>hook(false)}><FiMinimize2/></div>
+      </div>
 
     <style jsx global>{`
       .swiper-pagination {
