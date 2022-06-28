@@ -148,10 +148,13 @@
   transition: ease 300ms;
 }
 
-.linkbutton:hover {
-  transform: rotate(-180deg);
+.imgbutton:hover, .linkbutton:hover {
   color: var(--fg);
 }
+.linkbutton:hover {
+  transform: rotate(-180deg);
+}
+
 
 .open {
   z-index: 0;
@@ -173,8 +176,4 @@
 .hyper {
   display: flex;
   flex-direction: column;
-}
-
-.link:hover {
-  color: var(--fg);
 }

@@ -1,0 +1,116 @@
+.imgbutton{
+  height: 36px;
+  width: 36px;
+  background: var(--lbg);
+  color: var(--lfg);
+
+  font-weight: normal;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+
+  border-radius: 18px;
+  margin-bottom: 15px;
+
+  cursor: pointer;
+
+  transition: ease 300ms;
+}
+
+.imgbutton:hover {
+  color: var(--fg);
+}
+
+.overlay {
+  position: fixed;
+  display: block;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.bgmask {
+  background: #393939;
+  opacity: 0.4;
+  height: 100%;
+  width: 100%;
+
+  z-index: 5;
+}
+
+
+
+.carousel {
+  background: var(--lbg);
+
+  position: absolute !important;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media(min-width:651px){
+  .carousel {
+    width: 90vh;
+    height: 70vh;
+
+    top: 15vh;
+    left: calc(50vw - 45vh);
+  }
+
+  .coverimg {
+    width: 90vh;
+    height: 70vh;
+  }
+
+  .exit {
+    bottom: calc(15vh + 10px);
+    right: calc(10px + 50vw - 45vh);
+  }
+}
+
+@media(max-width: 650px) {
+  .coverimg {
+    width: 90vw;
+    height: 70vw;
+  }
+
+  .carousel {
+    width: 90vw;
+    height: 70vw;
+
+    top: calc(50vh - 35vw);
+    left: 5vw;
+  }
+
+  .exit {
+    bottom: calc(10px + 50vh - 35vw);
+    right: calc(10px + 5vw);
+  }
+}
+
+.exit {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+
+  background: var(--lbg);
+  z-index: 20;
+  color: var(--lfg);
+  transition: 200ms ease;
+}
+
+.exit:hover {
+  color: var(--fg);
+}
