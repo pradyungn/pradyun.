@@ -1,7 +1,9 @@
 ---
 title: Pradyuino
 profile: yellow
-beta: on
+img-1: pradyuino-1.jpg
+img-2: pradyuino-2.jpg
+img-3: pradyuino-3.jpg
 ---
 
 A not-so-clever portmanteau of my name and "arduino" - as that implies, this is an arduino schematic that I made and hand-wired myself.
