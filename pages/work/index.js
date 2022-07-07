@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import styles from '../../styles/Work.module.css'
 import hover from '../../styles/Hover.module.css'
 

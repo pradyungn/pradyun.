@@ -29,7 +29,7 @@ export default function NavBar(props) {
                 <HRLink name="about" active={props.about}/>
                 <HRLink name="files" active={props.files}/>
                 <HRLink name="work" active={props.work}/>
-                <HRLink name="blog" active={props.blog}/>
+                <HRLink name="notes" active={props.blog}/>
                 <div className={styles.toggle}>
                     <div onClick={() => setTheme(theme=="light" ? "dark" : "light")}
                         className={styles.link}>{buttontext}</div>
