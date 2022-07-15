@@ -22,7 +22,7 @@ const colors = {
   "orange": [ hover.orange, styles.or],
 }
 
-export default function Blog(props) {
+export default function Notes(props) {
   const [theme, setTheme] = useContext(ThemeCtx)
 
   function Tile(props) {
@@ -62,7 +62,7 @@ export default function Blog(props) {
   )
 }
 
-Blog.getInitialProps = async function() {
+Notes.getInitialProps = async function() {
     const posts = (context => {
         var keys = context.keys()
         const values = keys.map(context)

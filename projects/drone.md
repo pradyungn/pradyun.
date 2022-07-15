@@ -1,5 +1,5 @@
 ---
-title: The Drone Project
+title: The Drone
 profile: pink
 ---
 Our submission for CodeDay BA, Spring 2019! This project involved the devision of a raspberry-pi-powered drone, using stepper motors and a wooden frame. This drone was heavily engineered to be IoT-focused, with features like a web dashboard to monitor its diagnostics (altitude, speed, yaw, pitch, etc.), a live video feed that could be patched into a VR Headset (on multiple devices), and more! This project won us the best hardware hack at CDBA!

@@ -10,8 +10,20 @@
 
 .proj {
   font-size: 16px;
-  margin-left: 10px;
   margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+@media(min-width: 650px) {
+  .proj {
+    width: calc(33% - 5px);
+  }
+}
+
+@media(max-width: 650px) {
+  .proj {
+    width: calc(50% - 5px);
+  }
 }
 
 .pt {
@@ -19,4 +31,10 @@
   font-family: Outfit;
 
   color: var(--lfg);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
 }

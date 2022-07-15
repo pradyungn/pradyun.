@@ -31,11 +31,13 @@ export default function Work(props) {
         Over the years, I've worked on a multitude of projects - some as a hobby, others with competition in mind. Here, I briefly detail the process and design of some of those works.
       </div>
 
+      <div className={styles.projects}>
       {props.projects.map(proj => (
-        <div key={proj.slug} className={styles.proj}>
-          <Link href={`/work/${proj.slug}`}><a className={`${ styles.pt } ${hover[proj.profile]}`}>{proj.title}</a></Link>
-        </div>
-      ))}
+             <div key={proj.slug} className={styles.proj}>
+              <Link href={`/work/${proj.slug}`}><a className={`${ styles.pt } ${hover[proj.profile]}`}>{proj.title}</a></Link>
+            </div>
+        ))}
+      </div>
     </Container>
   )
 }
