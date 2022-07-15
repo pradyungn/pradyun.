@@ -30,6 +30,12 @@
   padding-top: 55%;
 }
 
+.tiledate {
+  font-family: Outfit, Roboto, sans-serif;
+  font-size: 16px;
+  color: var(--lfg);
+}
+
 .tiletent {
   padding: 15px;
   padding-bottom: 0;
@@ -41,6 +47,17 @@
   font-weight: 600;
   transition: 200ms ease;
   cursor: pointer;
+}
+
+.tileder{
+  height: 2px;
+  background-image: repeating-linear-gradient(90deg, var(--lfg) 0, 4px, transparent 4px, transparent 7px);
+  margin: 5px 3px;
+}
+
+.tiledesc {
+  margin: 5px;
+  margin-top:0;
 }
 
 .gallery{
@@ -56,6 +73,9 @@
   justify-content: center;
 }
 
+.tileimg > span {
+  border-radius: 4px;
+}
 
 
 @media (max-width: 825px) {
@@ -111,4 +131,18 @@
 
 .pi {
     background: var(--pink);
+}
+
+.contr {
+  padding: 0 15px;
+}
+
+@media(min-width: 1000px){
+  .contr {
+    padding: 10px calc(50vw - 515px);
+  }
+
+  .main {
+    min-height: calc(100vh - 62px)
+  }
 }

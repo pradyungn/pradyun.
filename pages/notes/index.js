@@ -1,6 +1,6 @@
 
 import React, { useContext } from 'react';
-import styles from '../../styles/Blog.module.css'
+import styles from '../../styles/Notes.module.css'
 import hover from '../../styles/Hover.module.css'
 
 import matter from 'gray-matter'
@@ -34,9 +34,11 @@ export default function Notes(props) {
                  loading="lazy"/>
         </div>
         <div className={styles.tiletent}>
+          <div className={styles.tiledate}>{props.date}</div>
           <Link href={"/notes/"+props.slug}>
             <div className={`${styles.tiletle} ${colors[props.profile][0]}`}>{props.title}</div>
           </Link>
+          <div className={styles.tileder}/>
           <div className={styles.tiledesc}>{props.blurb}</div>
         </div>
       </div>
@@ -44,8 +46,8 @@ export default function Notes(props) {
   }
 
   return (
-      <main className={"container " + theme}>
-        <Meta siteTitle="Notebook"/>
+    <main className={styles.contr + " container " + theme}>
+        <Meta siteTitle="Notebook" description="A glimpse into my (albeit chaotic) frame of mind"/>
         <NavBar blog="active" beta="on"/>
         <div className={styles.main}>
           <div className={styles.content}>
@@ -79,11 +81,13 @@ Notes.getInitialProps = async function() {
               "profile": init.data.profile,
               "title": init.data.title,
               "blurb": init.data.blurb,
-              "banner": init.data.banner
+              "banner": init.data.banner,
+              "date": init.data.date
             }
         })
         return data
     })(require.context('../../posts', true, /\.md$/))
+
     return {
         posts
     }

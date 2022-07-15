@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     margin:0;
+    width: calc(100% - 10px);
 }
 
 .links {

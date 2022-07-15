@@ -142,6 +142,4 @@ highlight ColorColumn ctermbg=0 guibg=#4C566A
 
 ## Plugins!
 Plugins - the things that take the normally Vim even more powerful than you could
-imagine. While the language-related plugins tend to be managed by coc.nvim
-(not covered in this already long guide), we're going to use Vim-Plug to manage
-all of the plugins that modify, add, and improve behaviors in Vim.
+imagine. While the language-related plugins tend to be managed by coc.nvim, there are lots of other great plugins to consider as well. However, that's a topic to be discussed in a future article.
