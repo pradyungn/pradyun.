@@ -1,5 +1,6 @@
-
 import React, { useContext } from 'react';
+import { IoExitOutline } from 'react-icons/io5'
+import { RiLightbulbFlashFill, RiLightbulbFlashLine} from 'react-icons/ri'
 import styles from '../../styles/Notes.module.css'
 import hover from '../../styles/Hover.module.css'
 
@@ -24,6 +25,15 @@ const colors = {
 
 export default function Notes(props) {
   const [theme, setTheme] = useContext(ThemeCtx)
+  const buttontext = theme=="light" ? (<RiLightbulbFlashLine/>) : (<RiLightbulbFlashFill/>)
+
+  const cmpObj = (dateA, dateB) => {
+    const d1 = new Date(dateA.date)
+    const d2 = new Date(dateB.date)
+    if(+d1 > +d2) return -1
+    return +(+d2 > +d1)
+  }
+  props.posts.sort(cmpObj)
 
   function Tile(props) {
     return (
@@ -47,15 +57,31 @@ export default function Notes(props) {
 
   return (
     <main className={styles.contr + " container " + theme}>
-        <Meta siteTitle="Notebook" description="A glimpse into my (albeit chaotic) frame of mind"/>
-        <NavBar blog="active" beta="on"/>
+      <Meta siteTitle="Notebook" description="A glimpse into my (albeit chaotic) frame of mind."/>
         <div className={styles.main}>
           <div className={styles.content}>
-            <div className={styles.head + " emph"}>Notebook</div>
-            <div className={styles.desc}>This is basically my version of a blog - except I'm not lazy enough to use wordpress. I want to write all kinds of things - ethics, technology, keyboards, linux - whatever interests me at the moment :)</div>
+            <div className={styles.headr}>
+              <div className={styles.head + " emph"}>Notebook</div>
+              <div className={styles.buttongroup}>
+                <div onClick={() => setTheme(theme=="light" ? "dark" : "light")}
+                     className={styles.button}>{buttontext}</div>
+                <Link href="/">
+                  <div className={`${styles.button} ${styles.exit}`}><IoExitOutline/></div>
+                </Link>
+              </div>
+            </div>
+            <div className={styles.desc}>
+              <p>
+                This is basically my version of a blog - except I'm not lazy enough to use wordpress. I want to write all kinds of things - ethics, technology, keyboards, linux - whatever interests me at the moment :)
+              </p>
+              <p>
+                I believe in a minimal reading experience - one akin to that of my kindle. No links or popups blaring at you to check something out, nothing too standoffish. Just information-dense text in a readable serif font (with the occasional visual aids).
+                I've designed my notebook to adhere to that design language.
+              </p>
+            </div>
             <div className={styles.gct}>
               <div className={styles.gallery}>
-                {props.posts.map((post) => (<Tile {...post}/>))}
+              {props.posts.map((post) => (<Tile {...post} key={post.slug}/>))}
               </div>
             </div>
           </div>
@@ -87,8 +113,7 @@ Notes.getInitialProps = async function() {
         })
         return data
     })(require.context('../../posts', true, /\.md$/))
-
     return {
-        posts
+      posts
     }
 }

@@ -33,6 +33,10 @@
     --lfg: #767676;
 }
 
+::selection {
+  background: var(--blue);
+}
+
 /* general formatting */
 body,
 html {
@@ -56,6 +60,14 @@ html {
     font-weight: 600;
 }
 
+code {
+  font-family: "motor", monospace!important;
+  font-style: normal;
+
+  background: var(--lbg)!important;
+  text-shadow: none !important;
+  font-size: 18px;
+}
 
 /* link formatting */
 a {

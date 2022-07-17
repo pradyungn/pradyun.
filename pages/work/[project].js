@@ -33,8 +33,8 @@ export default function Project(props) {
             <div className={styles.hyper}>
               {
                 links.map(link => (
-                  <a href={fm[link]} className={`${styles.link} ${open ? styles.open : styles.close}`}>
-                  <div key={link}>
+                  <a href={fm[link]} className={`${styles.link} ${open ? styles.open : styles.close}`} key={link}>
+                  <div>
                       {link.replace("link-", "")}
                     </div>
                   </a>

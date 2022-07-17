@@ -5,23 +5,11 @@ date: 7/1/2020
 blurb: Vim isn't meant to be a full-time development environment out of box... so let's make it one.
 ---
 
-Vim. Whether you love it, hate it, or haven't heard of it (in which case you're missing out lmao)
-its ubiquity can't really be debated. And to be quite honest, I find it so much
-more _natural_ than any other editor I've used - and I've used almost all of the
-major one. VSCode, Sublime, IntelliJ derivatives, Atom, and for chrissakes EMACS
-\- nothing really stacked up to Vim's intuitive interface (at least for me). Now
-I literally use Vim for _**everything**_ - even for things that normally require
-specific environments, like Flutter (Android Studio) or Data Science in Python
-(PyCharm or Jupyter). The reason that I'm able to do that is two specific facets
-of my vim environment:
-* NeoVim - a distribution of Vim that's more open source, supporting asynchronous
-backends, and has some extra features like native terminals.
-* coc.nvim - a plugin for NeoVim
-Neovim specifically is pretty easy to set up - it's literally the same interface
-as Vim with some nice goodies thrown in. COC.nvim takes a little longer to set
-up on the other hand, so I'm going to cover setting up COC.nvim for various
-development scenarios in a future article. The configuration in this article
-should allow you to come out with a great experience in either Vim or NeoVim.
+Vim. Whether you love it, hate it, or haven't heard of it (in which case you're missing out lmao) its ubiquity can't really be debated. And to be quite honest, I find it so much more _natural_ than any other editor I've used - and I've used almost all of the major one. VSCode, Sublime, IntelliJ derivatives, Atom, and for chrissakes EMACS \- nothing really stacked up to Vim's intuitive interface (at least for me). Now I literally use Vim for _**everything**_ - even for things that normally require specific environments, like Flutter (Android Studio) or Data Science in Python (PyCharm or Jupyter). The reason that I'm able to do that is two specific facets of my vim environment:
+* NeoVim - a distribution of Vim that's more open source, supporting asynchronous backends, and has some extra features like native terminals.
+* coc.nvim - a plugin for NeoVim.
+
+Neovim specifically is pretty easy to set up - it's literally the same interface as Vim with some nice goodies thrown in. COC.nvim takes a little longer to set up on the other hand, so I'm going to cover setting up COC.nvim for various development scenarios in a future article. The configuration in this article should allow you to come out with a great experience in either Vim or NeoVim.
 
 The goal of this article isn't to just _give you_ a config. It's to help you
 understand how Vim configuration works - hopefully to an extent that you feel

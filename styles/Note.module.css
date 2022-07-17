@@ -3,6 +3,7 @@
   font-weight: 600;
   font-size: 44px;
   margin-bottom: -5px;
+  margin-left: -0.5vw;
 }
 
 .banner {
@@ -11,27 +12,63 @@
   max-height: 400px;
   height: 42.5vw;
   position: relative;
-  margin-top: 5vh;
+  margin-top: 20px;
   margin-bottom: -5px;
 }
 
 .main {
   max-width: 750px;
   width: 80vw;
+  margin-bottom: 50px;
+  font-size: 18px;
 }
 
 .page {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 55px;
 }
 
-.md {
-  font-size: 18px;
-}
 .md > h2 {
   font-family: Outfit, Roboto, sans-serif;
   font-weight: 600;
   font-size: 32px;
   margin: 0;
+}
+
+.md > pre > div {
+  border-radius: 3px;
+}
+
+.dasher {
+  height: 2px;
+  background-image: repeating-linear-gradient(90deg, var(--lfg) 0, 4px, transparent 4px, transparent 7px);
+  margin: 12px 3px;
+  margin-bottom: -7px;
+}
+
+.blurb {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.backbutton {
+  color: var(--lfg);
+  font-size: 20px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Outfit, Roboto, sans-serif;
+  font-weight: 600;
+  transition: 200ms ease;
+  width:100%;
+
+  width: 85vw;
+  max-width: 800px;
+}
+
+.backbutton:hover {
+  color: var(--fg);
 }
